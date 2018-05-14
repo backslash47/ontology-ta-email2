@@ -18,6 +18,7 @@
 
 import express from 'express';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 import config from './config';
 
 import { EmailRequestController, ChallengeControler} from './controllers';
@@ -25,6 +26,7 @@ import { EmailRequestController, ChallengeControler} from './controllers';
 const app: express.Application = express();
 const port: number = config.app.port;
 
+app.use(cors());
 app.use(bodyParser.text());
 app.use('/email-request', EmailRequestController);
 app.use('/challenge', ChallengeControler);
