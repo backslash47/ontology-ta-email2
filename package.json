@@ -1,0 +1,22 @@
+{
+  "name": "ontology-ta-email2",
+  "version": "1.0.0",
+  "description": "Email verification TA service",
+  "main": "./build/server.js",
+  "author": "Matus Zamborsky <zamborsky@gmail.com>",
+  "license": "LGPL",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc",
+    "start": "tsc --watch & nodemon ./"
+  },
+  "dependencies": {
+    "@types/express": "^4.11.1",
+    "@types/nodemailer": "^4.6.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.4",
+    "ont-sdk-ts": "backslash47/ontology-ts-sdk#oep-verify-impl",
+    "typescript": "^2.8.3"
+  }
+}
