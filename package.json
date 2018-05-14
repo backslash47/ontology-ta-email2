@@ -7,8 +7,8 @@
   "license": "LGPL",
   "private": true,
   "scripts": {
-    "tsc": "tsc",
-    "start": "tsc --watch & nodemon ./"
+    "build": "tsc",
+    "start": "nodemon ./"
   },
   "dependencies": {
     "@types/cors": "^2.8.4",
