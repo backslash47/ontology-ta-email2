@@ -39,8 +39,9 @@ npm install --global yarn
 git clone 'https://github.com/backslash47/ontology-ta-email2.git'
 ```
 
-#### Start development server
+#### Build and Start development server
 ````
+yarn build
 yarn start
 ````
 
